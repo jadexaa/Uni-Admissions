@@ -1,0 +1,46 @@
+//header n main things
+header, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+header {
+    grid-template-columns:  auto auto;
+    border-bottom: 1px solid #eee;
+}
+// nav
+nav {
+    button{display: none;}
+
+    justify-self: end;
+
+    ul, ul.open {
+        position: relative;
+        display: flex;
+
+        justify-content: right;
+
+        background-color: transparent;
+        width: auto;
+    }
+
+    ul li {border: none;}
+
+    ul li a {
+        color: #333;
+        border-radius: 20px;
+        padding: .5rem 1rem;
+        margin-left: .2rem;
+        transition: all .5s ease;
+    }
+
+    ul li a:hover {
+        background-color: #eee;
+        color: #333!important;
+    }
+
+    ul li.active a {
+        color: white;
+    }
+
+}
